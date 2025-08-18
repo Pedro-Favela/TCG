@@ -1,0 +1,21 @@
+{
+    "DeckName":"Pingulinhos",
+    "DeckDescription": "Pingulinhos são criaturas muito fofas, porém igualmente caóticas. Não deixe suas carinhas adoraveis o enganar, são vistos como peste por muito países, são muito insistente e farão de tudo para roubar seus petiscos",
+    "Cards":[
+        {
+            "name": "Pingulinho",
+            "id":"001",
+            "imagepath": "CardLib\\Pingulinhos\\Assets\\Pingulinho.png"
+        },
+        {
+            "name": "Pingulinho Alto",
+            "id":"002",
+            "imagepath": "CardLib\\Pingulinhos\\Assets\\PingulinhoAlto.png"
+        },
+        {
+            "name": "Operação caixona",
+            "id":"003",
+            "imagepath": "CardLib\\Pingulinhos\\Assets\\OperacaoCaixona.png"
+        }
+    ]
+}
