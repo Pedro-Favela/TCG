@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://crdv5f3jrp5vd"]
+
+[node name="DeckPanel" type="PanelContainer"]
+custom_minimum_size = Vector2(0, 300)
+mouse_filter = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Title" type="RichTextLabel" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 1
+theme_override_font_sizes/normal_font_size = 28
+text = "PINGULINHOS "
+
+[node name="Quantity" type="RichTextLabel" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(120, 0)
+layout_direction = 2
+layout_mode = 2
+mouse_filter = 1
+theme_override_font_sizes/normal_font_size = 28
+bbcode_enabled = true
+text = "[right]000/100"

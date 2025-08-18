@@ -1,0 +1,177 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0muc646y406v"]
+
+[ext_resource type="PackedScene" uid="uid://ca5tjymm1xnfd" path="res://Scenes/Components/Header.tscn" id="1_ixuwy"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pest2"]
+bg_color = Color(1, 1, 1, 1)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="Header" parent="VBoxContainer" instance=ExtResource("1_ixuwy")]
+layout_mode = 2
+
+[node name="TitleText" parent="VBoxContainer/Header/MarginContainer/HBoxContainer/Title" index="0"]
+text = "[center]DECK NAME"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_pest2")
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="GridContainer" type="HFlowContainer" parent="VBoxContainer/ScrollContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 20
+theme_override_constants/v_separation = 20
+alignment = 1
+last_wrap_alignment = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/ScrollContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(140, 240)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="PanelContainer2" type="PanelContainer" parent="VBoxContainer/ScrollContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(140, 240)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="PanelContainer3" type="PanelContainer" parent="VBoxContainer/ScrollContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(140, 240)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="PanelContainer4" type="PanelContainer" parent="VBoxContainer/ScrollContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(140, 240)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="PanelContainer5" type="PanelContainer" parent="VBoxContainer/ScrollContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(140, 240)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="PanelContainer6" type="PanelContainer" parent="VBoxContainer/ScrollContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(140, 240)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="PanelContainer7" type="PanelContainer" parent="VBoxContainer/ScrollContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(140, 240)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="PanelContainer8" type="PanelContainer" parent="VBoxContainer/ScrollContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(140, 240)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="PanelContainer9" type="PanelContainer" parent="VBoxContainer/ScrollContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(140, 240)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="PanelContainer10" type="PanelContainer" parent="VBoxContainer/ScrollContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(140, 240)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="PanelContainer11" type="PanelContainer" parent="VBoxContainer/ScrollContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(140, 240)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="PanelContainer12" type="PanelContainer" parent="VBoxContainer/ScrollContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(140, 240)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="PanelContainer13" type="PanelContainer" parent="VBoxContainer/ScrollContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(140, 240)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="PanelContainer14" type="PanelContainer" parent="VBoxContainer/ScrollContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(140, 240)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="PanelContainer15" type="PanelContainer" parent="VBoxContainer/ScrollContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(140, 240)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="PanelContainer16" type="PanelContainer" parent="VBoxContainer/ScrollContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(140, 240)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="PanelContainer17" type="PanelContainer" parent="VBoxContainer/ScrollContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(140, 240)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="PanelContainer18" type="PanelContainer" parent="VBoxContainer/ScrollContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(140, 240)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="PanelContainer19" type="PanelContainer" parent="VBoxContainer/ScrollContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(140, 240)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="PanelContainer20" type="PanelContainer" parent="VBoxContainer/ScrollContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(140, 240)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="PanelContainer21" type="PanelContainer" parent="VBoxContainer/ScrollContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(140, 240)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="PanelContainer22" type="PanelContainer" parent="VBoxContainer/ScrollContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(140, 240)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="PanelContainer23" type="PanelContainer" parent="VBoxContainer/ScrollContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(140, 240)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="PanelContainer24" type="PanelContainer" parent="VBoxContainer/ScrollContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(140, 240)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="PanelContainer25" type="PanelContainer" parent="VBoxContainer/ScrollContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(140, 10000)
+layout_mode = 2
+mouse_filter = 1
+
+[editable path="VBoxContainer/Header"]
