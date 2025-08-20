@@ -1,6 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://d0muc646y406v"]
+[gd_scene load_steps=6 format=3 uid="uid://d0muc646y406v"]
 
 [ext_resource type="PackedScene" uid="uid://ca5tjymm1xnfd" path="res://Scenes/Components/Header.tscn" id="1_ixuwy"]
+[ext_resource type="Script" path="res://Scripts/Deck.gd" id="1_lj48o"]
+[ext_resource type="PackedScene" uid="uid://cg4bhw510trsg" path="res://Scenes/Pages/MenuDecks.tscn" id="3_2bxd5"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pest2"]
 bg_color = Color(1, 1, 1, 1)
@@ -16,6 +18,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_lj48o")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -27,11 +30,8 @@ grow_vertical = 2
 theme_override_constants/separation = 0
 
 [node name="Header" parent="VBoxContainer" instance=ExtResource("1_ixuwy")]
-custom_minimum_size = Vector2(0, 500)
 layout_mode = 2
-
-[node name="TitleText" parent="VBoxContainer/Header/MarginContainer/HBoxContainer/Title" index="0"]
-text = "[center]DECK NAME"
+scene_to_back = ExtResource("3_2bxd5")
 
 [node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
 layout_mode = 2
@@ -203,5 +203,3 @@ custom_minimum_size = Vector2(140, 10000)
 layout_mode = 2
 mouse_filter = 1
 theme_override_styles/panel = SubResource("StyleBoxFlat_gbbcn")
-
-[editable path="VBoxContainer/Header"]

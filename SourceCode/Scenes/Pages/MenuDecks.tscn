@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cg4bhw510trsg"]
+[gd_scene load_steps=5 format=3 uid="uid://cg4bhw510trsg"]
 
 [ext_resource type="PackedScene" uid="uid://crdv5f3jrp5vd" path="res://Scenes/Components/DeckPanel.tscn" id="1_pu3m5"]
 [ext_resource type="PackedScene" uid="uid://ca5tjymm1xnfd" path="res://Scenes/Components/Header.tscn" id="1_pv03x"]
+[ext_resource type="PackedScene" uid="uid://cmdf2ydtjt372" path="res://Scenes/Pages/MainMenu.tscn" id="2_p87vc"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p3x0g"]
 bg_color = Color(1, 1, 1, 1)
@@ -24,6 +25,7 @@ theme_override_constants/separation = 0
 
 [node name="Header" parent="VBoxContainer" instance=ExtResource("1_pv03x")]
 layout_mode = 2
+scene_to_back = ExtResource("2_p87vc")
 
 [node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
 layout_mode = 2
@@ -39,6 +41,7 @@ theme_override_constants/separation = 0
 [node name="DeckPanel" parent="VBoxContainer/ScrollContainer/VBoxContainer" instance=ExtResource("1_pu3m5")]
 layout_mode = 2
 mouse_default_cursor_shape = 2
+DeckName = "teste"
 
 [node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
 layout_mode = 2
