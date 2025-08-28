@@ -3,13 +3,16 @@ extends PanelContainer
 @export var DeckName: String
 var on_focus: bool = false
 
+@onready var title: RichTextLabel = $MarginContainer/HBoxContainer/Title
 
 func _ready() -> void:
 	connect("mouse_entered", mouse_entered)
 	connect("mouse_exited", mouse_exited)
+	title.text = DeckName
 
 func _input(event: InputEvent) -> void:
-	if event is InputEventMouseButton and event.is_pressed():
+	if event is InputEventScreenTouch and event.is_pressed():
+		print(event)
 		if !on_focus:
 			return
 		#var path_to_deck:String = "res://Scenes/Pages/"+DeckName+".tscn"

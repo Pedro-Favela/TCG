@@ -1,6 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://cmdf2ydtjt372"]
+[gd_scene load_steps=4 format=3 uid="uid://cmdf2ydtjt372"]
 
 [ext_resource type="Script" path="res://Scripts/MainMenu.gd" id="1_n3ic7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l6yiw"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yylol"]
+bg_color = Color(1, 1, 1, 1)
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -25,6 +31,7 @@ theme_override_constants/separation = 0
 [node name="Header" type="PanelContainer" parent="VBoxContainer"]
 custom_minimum_size = Vector2(0, 300)
 layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_l6yiw")
 
 [node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/Header"]
 layout_mode = 2
@@ -38,6 +45,7 @@ layout_mode = 2
 [node name="PanelContainer2" type="PanelContainer" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_yylol")
 
 [node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/PanelContainer2"]
 layout_mode = 2

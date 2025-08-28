@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwulimp3b6cio"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gbbcn"]
+shadow_size = 1
+shadow_offset = Vector2(-10, 10)
+
+[node name="PanelContainer" type="PanelContainer"]
+custom_minimum_size = Vector2(140, 240)
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxFlat_gbbcn")

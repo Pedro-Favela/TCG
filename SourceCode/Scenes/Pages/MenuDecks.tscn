@@ -16,9 +16,10 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-layout_mode = 2
-offset_right = 1080.0
-offset_bottom = 1920.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 0
@@ -39,6 +40,16 @@ size_flags_vertical = 3
 theme_override_constants/separation = 0
 
 [node name="DeckPanel" parent="VBoxContainer/ScrollContainer/VBoxContainer" instance=ExtResource("1_pu3m5")]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+DeckName = "teste"
+
+[node name="DeckPanel2" parent="VBoxContainer/ScrollContainer/VBoxContainer" instance=ExtResource("1_pu3m5")]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+DeckName = "placefodase"
+
+[node name="DeckPanel3" parent="VBoxContainer/ScrollContainer/VBoxContainer" instance=ExtResource("1_pu3m5")]
 layout_mode = 2
 mouse_default_cursor_shape = 2
 DeckName = "teste"

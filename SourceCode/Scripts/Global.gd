@@ -2,7 +2,6 @@ extends Control
 
 @onready var anim: AnimationPlayer = $Node/AnimationPlayer
 
-
 func transition(target_scene) -> void:
 	anim.play("Trans_in")
 	await anim.animation_finished
@@ -21,3 +20,15 @@ func transition(target_scene) -> void:
 	
 	await get_tree().tree_changed
 	anim.play("Trans_out") 
+
+func _ready() -> void:
+	if !DirAccess.dir_exists_absolute("user://CardLib"):
+		DirAccess.make_dir_recursive_absolute("user://CardLib")
+	
+	
+	
+	
+	
+	
+	
+	

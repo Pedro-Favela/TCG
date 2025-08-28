@@ -5,17 +5,22 @@
         {
             "name": "Pingulinho",
             "id":"001",
-            "imagepath": "CardLib\\Pingulinhos\\Assets\\Pingulinho.png"
+            "imagepath": "CardLib\\Pingulinhos\\Assets\\pingulinho.png"
         },
         {
-            "name": "Pingulinho Alto",
+            "name": "Morango",
             "id":"002",
-            "imagepath": "CardLib\\Pingulinhos\\Assets\\PingulinhoAlto.png"
+            "imagepath": "CardLib\\Pingulinhos\\Assets\\morango.png"
         },
         {
-            "name": "Operação caixona",
+            "name": "Só os mais fortes sobrevivem",
             "id":"003",
-            "imagepath": "CardLib\\Pingulinhos\\Assets\\OperacaoCaixona.png"
+            "imagepath": "CardLib\\Pingulinhos\\Assets\\so_os_mais_fortes_sobrevivem.png"
+        },
+		{
+            "name": "Banquete",
+            "id":"004",
+            "imagepath": "CardLib\\Pingulinhos\\Assets\\banquete.png"
         }
     ]
 }
